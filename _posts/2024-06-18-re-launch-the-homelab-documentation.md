@@ -9,7 +9,7 @@ youtubeId: teV7XluaSl4
 
 ![Jekyll](/assets/img/jekyll.png){: width="100" height="100" }{: .right }
 
-Der *Static-Site-Generator* **Jekyll** ist auf eine neue VM unter Proxmox umgezogen und hat bei dieser Gelegenheit eine Menge Ballast abgeworfen. Für den Leser von **Docu Wizard** vielleicht weniger interessant - für den Wizard aber eine erhebliche Beschleunigung und damit Zeitersparnis.
+Der *Static-Site-Generator* **Jekyll** ist auf eine neue VM unter Proxmox umgezogen und hat bei dieser Gelegenheit eine Menge Ballast abgeworfen. Für den Leser von **Docu Wizard** vielleicht weniger interessant - für den Wizard aber eine _erhebliche Beschleunigung_ und damit Zeitersparnis.
 
 >Ausserdem lassen sich neue `Posts` nun auch von überall aus einem Browser erstellen bzw. alte Posts redigieren.
 
