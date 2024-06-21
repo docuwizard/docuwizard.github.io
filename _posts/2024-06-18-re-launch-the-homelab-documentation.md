@@ -13,6 +13,9 @@ Der *Static-Site-Generator* **Jekyll** ist auf eine neue VM unter Proxmox umgezo
 
 >Ausserdem lassen sich neue `Posts` nun auch von überall aus einem Browser erstellen bzw. alte Posts redigieren.
 
+> Das Github Repository wurde umgestellt und ist ab sofort nicht mehr öffentlich zu erreichen.
+{: .prompt-info }
+
 - [x] check _config.yml
 - [ ] review style guide
 - [ ] stay awesome!
