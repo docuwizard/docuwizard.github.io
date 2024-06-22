@@ -4,9 +4,7 @@ title: Umzug und Umbau der Homelab Documentation
 date: 2024-06-18 14:03 +0200
 youtubeId: teV7XluaSl4
 image:
-  path: ![Light mode only](/assets/images/jekyll-logo-light-transparent.png){: .light }
-image:
-  path: ![Dark mode only](/assets/images/jekyll-logo-dark-transparent.png){: .dark }
+  path: /assets/images/jekyll-logo-light-transparent.png
 ---
 
 ## Jekyll Re-Launch
