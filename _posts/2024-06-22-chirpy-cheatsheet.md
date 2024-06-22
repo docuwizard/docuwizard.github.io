@@ -3,6 +3,8 @@ title: Chirpy Cheatsheet
 description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 categories: [Blogging, Demo]
 tags: [typography]
+math: true
+mermaid: true
 ---
 
 ## Headings
