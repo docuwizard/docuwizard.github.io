@@ -6,7 +6,7 @@ date: 2024-07-01 11:53 +0200
 
 Unter Debian 12.6 soll die Shell ZSH mit dem Framework oh-my-zsh, dem fuzzy finder FZF und derm Theme Powerlevel10k installiert werden. Im Anschluss werden die wichtigsten Plugins für das Framework oh-my-ush installiert.
 
-1. ZSH installieren
+### ZSH installieren
 
 Am Anfang wird ZSH für alle Benutzer installiert:
 
@@ -15,7 +15,7 @@ sudo apt update
 sudo apt install zsh -y
 ```
 
-2. Oh-My-Zsh installieren
+### Oh-My-Zsh installieren
 
 Im Anschluss wird das Framework Oh-My-Zsh installiert:
 
@@ -23,7 +23,7 @@ Im Anschluss wird das Framework Oh-My-Zsh installiert:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-3. Powerlevel10k Theme installieren
+### Powerlevel10k Theme installieren
 
 Für die Installation des Powerlevel10k Themes müssen folgende Schritte ausgeführt werden:
 
@@ -37,7 +37,7 @@ Danach muss die Verwendung des Themes in der Datei .zshrc eingetragen werden:
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
 ```
 
-4. FZF installieren
+### FZF installieren
 
 Der fuzzy finder FZF wird installiert:
 
@@ -46,7 +46,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-5. Plugins für Oh-My-Zsh installieren
+### Plugins für Oh-My-Zsh installieren
 
 Die wichtigsten Plugins werden installiert:
 
@@ -79,7 +79,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
 ```
 
-6. Plugins aktivieren
+### Plugins aktivieren
 
 Um die installierten Plugins zu aktivieren, muss die Datei .zshrc bearbeitet werden:
 
@@ -87,25 +87,25 @@ Um die installierten Plugins zu aktivieren, muss die Datei .zshrc bearbeitet wer
 sed -i 's/plugins=(.*)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat fast-syntax-highlighting fzf-tab zsh-history-substring-search)/' ~/.zshrc
 ```
 
-7. ZSH als Standard-Shell festlegen
+### ZSH als Standard-Shell festlegen
 
 ```bash
 chsh -s $(which zsh)
 ```
 
-8. Benutzer-Shell aktualisieren
+### Benutzer-Shell aktualisieren
 
 ```bash
 sudo usermod -s /usr/bin/zsh <username>
 ```
 
-9. ZSH-Konfiguration für alle (neuen) Benutzer
+### ZSH-Konfiguration für alle (neuen) Benutzer
 
 ```bash
 sudo cp ~/.zshrc /etc/skel/.zshrc
 ```
 
-10. System aktualisieren und abschliessen
+### System aktualisieren und abschliessen
 
 ```bash
 sudo apt upgrade -y
