@@ -23,7 +23,8 @@ timezone: Europe/Berlin
 
 title: Docu Wizard # the main title
 
-tagline: Documentation for the Homelab # it will display as the sub-title
+# tagline: Documentation for the Homelab # it will display as the sub-title
+tagline: Documentation of the homelab technology
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
