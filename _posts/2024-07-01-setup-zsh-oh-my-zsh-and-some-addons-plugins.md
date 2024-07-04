@@ -64,7 +64,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.
 git clone https://github.com/MichaelAquilina/zsh-you-should-use ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/you-should-use
 
 # zsh-bat
-git clone https://github.com/jeffreytse/zsh-bat.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-bat
+git clone https://github.com/fdellwing/zsh-bat.git $ZSH_CUSTOM/plugins/zsh-bat
 
 # fast-syntax-highlighting
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
@@ -85,6 +85,21 @@ Um die installierten Plugins zu aktivieren, muss die Datei .zshrc bearbeitet wer
 
 ```bash
 sed -i 's/plugins=(.*)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat fast-syntax-highlighting fzf-tab zsh-history-substring-search)/' ~/.zshrc
+```
+
+### Installation von bat als Ersatz für cat
+
+```bash
+sudo apt install bat
+mkdir -p ~/.local/bin\nln -s /usr/bin/batcat ~/.local/bin/bat
+ln -s /usr/bin/batcat ~/.local/bin/bat
+```
+
+### Installation von fzf für das Plugin fzf-tab
+
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 ```
 
 ### ZSH als Standard-Shell festlegen
@@ -109,4 +124,6 @@ sudo cp ~/.zshrc /etc/skel/.zshrc
 
 ```bash
 sudo apt upgrade -y
+source ~/.zshrc
 ```
+
