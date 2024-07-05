@@ -95,6 +95,13 @@ mkdir -p ~/.local/bin\nln -s /usr/bin/batcat ~/.local/bin/bat
 ln -s /usr/bin/batcat ~/.local/bin/bat
 ```
 
+### Installation von EXA als Erweiterung von ls
+
+```bash
+sudo apt install exa
+alias list="exa -l -a -h -g --octal-permissions"
+```
+
 ### Installation von fzf für das Plugin fzf-tab
 
 ```bash
