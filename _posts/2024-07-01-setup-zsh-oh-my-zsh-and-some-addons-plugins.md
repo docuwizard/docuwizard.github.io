@@ -91,7 +91,7 @@ sed -i 's/plugins=(.*)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting 
 
 ```bash
 sudo apt install bat
-mkdir -p ~/.local/bin\nln -s /usr/bin/batcat ~/.local/bin/bat
+mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 ```
 
@@ -100,13 +100,6 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 ```bash
 sudo apt install exa
 alias list="exa -l -a -h -g --octal-permissions"
-```
-
-### Installation von fzf für das Plugin fzf-tab
-
-```bash
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
 ```
 
 ### ZSH als Standard-Shell festlegen
