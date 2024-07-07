@@ -84,7 +84,7 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${Z
 Um die installierten Plugins zu aktivieren, muss die Datei .zshrc bearbeitet werden:
 
 ```bash
-sed -i 's/plugins=(.*)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat fast-syntax-highlighting fzf-tab zsh-history-substring-search)/' ~/.zshrc
+sed -i 's/plugins=(.*)/plugins=(fast-syntax-highlighting sudo fzf-tab docker docker-compose git you-should-use zsh-autosuggestions zsh-bat zsh-syntax-highlighting zsh-history-substring-search web-search z)/' ~/.zshrc
 ```
 
 ### Installation von bat als Ersatz für cat
@@ -99,7 +99,8 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 
 ```bash
 sudo apt install exa
-alias list="exa -l -a -h -g --octal-permissions"
+touch $ZSH_CUSTOM/aliases.zsh
+echo 'alias list="exa -l -a -h -g --octal-permissions"' >> $ZSH_CUSTOM/aliases.zsh
 ```
 
 ### ZSH als Standard-Shell festlegen
